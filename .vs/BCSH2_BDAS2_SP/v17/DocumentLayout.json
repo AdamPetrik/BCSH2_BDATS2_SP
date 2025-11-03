@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Adam Pet\u0159\u00EDk\\Documents\\GitHub\\BCSH2_BDAS2_SP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E490F415-93B1-4B86-A3D0-F136EF21894C}|SpravaObjednavek_GUI_App\\SpravaObjednavek_GUI_App.csproj|c:\\users\\adam pet\u0159\u00EDk\\documents\\github\\bcsh2_bdas2_sp\\spravaobjednavek_gui_app\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E490F415-93B1-4B86-A3D0-F136EF21894C}|SpravaObjednavek_GUI_App\\SpravaObjednavek_GUI_App.csproj|solutionrelative:spravaobjednavek_gui_app\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E490F415-93B1-4B86-A3D0-F136EF21894C}|SpravaObjednavek_GUI_App\\SpravaObjednavek_GUI_App.csproj|c:\\users\\adam pet\u0159\u00EDk\\documents\\github\\bcsh2_bdas2_sp\\spravaobjednavek_gui_app\\run.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E490F415-93B1-4B86-A3D0-F136EF21894C}|SpravaObjednavek_GUI_App\\SpravaObjednavek_GUI_App.csproj|solutionrelative:spravaobjednavek_gui_app\\run.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Run.cs",
+              "DocumentMoniker": "C:\\Users\\Adam Pet\u0159\u00EDk\\Documents\\GitHub\\BCSH2_BDAS2_SP\\SpravaObjednavek_GUI_App\\Run.cs",
+              "RelativeDocumentMoniker": "SpravaObjednavek_GUI_App\\Run.cs",
+              "ToolTip": "C:\\Users\\Adam Pet\u0159\u00EDk\\Documents\\GitHub\\BCSH2_BDAS2_SP\\SpravaObjednavek_GUI_App\\Run.cs",
+              "RelativeToolTip": "SpravaObjednavek_GUI_App\\Run.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T18:40:25.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Adam Pet\u0159\u00EDk\\Documents\\GitHub\\BCSH2_BDAS2_SP\\SpravaObjednavek_GUI_App\\LoginForm.cs",
+              "RelativeDocumentMoniker": "SpravaObjednavek_GUI_App\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\Adam Pet\u0159\u00EDk\\Documents\\GitHub\\BCSH2_BDAS2_SP\\SpravaObjednavek_GUI_App\\LoginForm.cs [Design]",
+              "RelativeToolTip": "SpravaObjednavek_GUI_App\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T18:40:15.209Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
