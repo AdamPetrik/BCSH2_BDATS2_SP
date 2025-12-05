@@ -30,10 +30,10 @@
         {
             usernameLabel = new Label();
             passwordLabel = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            usernameTextBox = new TextBox();
+            passwordTextBox = new TextBox();
             loginButton = new Button();
-            hostButton = new Button();
+            guestButton = new Button();
             statusLabel = new Label();
             SuspendLayout();
             // 
@@ -57,19 +57,20 @@
             passwordLabel.TabIndex = 1;
             passwordLabel.Text = "Heslo";
             // 
-            // textBox1
+            // usernameTextBox
             // 
-            textBox1.Location = new Point(67, 36);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(164, 23);
-            textBox1.TabIndex = 2;
+            usernameTextBox.Location = new Point(67, 36);
+            usernameTextBox.Name = "usernameTextBox";
+            usernameTextBox.Size = new Size(164, 23);
+            usernameTextBox.TabIndex = 2;
             // 
-            // textBox2
+            // passwordTextBox
             // 
-            textBox2.Location = new Point(67, 90);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(164, 23);
-            textBox2.TabIndex = 3;
+            passwordTextBox.Location = new Point(67, 90);
+            passwordTextBox.Name = "passwordTextBox";
+            passwordTextBox.Size = new Size(164, 23);
+            passwordTextBox.TabIndex = 3;
+            passwordTextBox.UseSystemPasswordChar = true;
             // 
             // loginButton
             // 
@@ -85,19 +86,19 @@
             loginButton.UseVisualStyleBackColor = false;
             loginButton.Click += loginButton_Click;
             // 
-            // hostButton
+            // guestButton
             // 
-            hostButton.BackColor = Color.RoyalBlue;
-            hostButton.FlatStyle = FlatStyle.Flat;
-            hostButton.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            hostButton.ForeColor = Color.Snow;
-            hostButton.Location = new Point(67, 172);
-            hostButton.Name = "hostButton";
-            hostButton.Size = new Size(164, 34);
-            hostButton.TabIndex = 5;
-            hostButton.Text = "Režim hosta";
-            hostButton.UseVisualStyleBackColor = false;
-            hostButton.Click += hostButton_Click;
+            guestButton.BackColor = Color.RoyalBlue;
+            guestButton.FlatStyle = FlatStyle.Flat;
+            guestButton.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            guestButton.ForeColor = Color.Snow;
+            guestButton.Location = new Point(67, 172);
+            guestButton.Name = "guestButton";
+            guestButton.Size = new Size(164, 34);
+            guestButton.TabIndex = 5;
+            guestButton.Text = "Režim hosta";
+            guestButton.UseVisualStyleBackColor = false;
+            guestButton.Click += guestButton_Click;
             // 
             // statusLabel
             // 
@@ -113,16 +114,17 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(299, 263);
             Controls.Add(statusLabel);
-            Controls.Add(hostButton);
+            Controls.Add(guestButton);
             Controls.Add(loginButton);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(passwordTextBox);
+            Controls.Add(usernameTextBox);
             Controls.Add(passwordLabel);
             Controls.Add(usernameLabel);
             MaximizeBox = false;
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Přihlášení";
+            Shown += LoginForm_Shown;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -131,10 +133,10 @@
 
         private Label usernameLabel;
         private Label passwordLabel;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox usernameTextBox;
+        private TextBox passwordTextBox;
         private Button loginButton;
-        private Button hostButton;
+        private Button guestButton;
         private Label statusLabel;
     }
 }

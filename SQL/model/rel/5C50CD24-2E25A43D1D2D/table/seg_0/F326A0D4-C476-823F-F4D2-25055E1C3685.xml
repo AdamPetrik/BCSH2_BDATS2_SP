@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F326A0D4-C476-823F-F4D2-25055E1C3685" name="LICENSE_TYPE">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>7506BEDD-2CB5-72F3-08A7-BE80FDA7F4F9</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="license_type_id" id="416CE2FB-F5C7-5FCC-7435-8271EF840FE5">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>290D0B9A-CABE-1868-7F36-6A7BB2B297C5</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="63C89626-493E-698A-EDEB-47130CA1C90A">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>C0537863-4D8E-42EE-D6F0-677C0895D7AB</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<constraintName>license_type_type_constraint</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="ADMINISTRATOR" description=""/>
+<valueDef value="LITE" description=""/>
+<valueDef value="PREMIUM" description=""/>
+<valueDef value="STANDARD" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F1B4860C-4977-4188-697E-38AF87D2B7CD" name="LICENSE_TYPE_PK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>7A2A38F6-4351-1D86-39CA-30FAD97D15BA</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="416CE2FB-F5C7-5FCC-7435-8271EF840FE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

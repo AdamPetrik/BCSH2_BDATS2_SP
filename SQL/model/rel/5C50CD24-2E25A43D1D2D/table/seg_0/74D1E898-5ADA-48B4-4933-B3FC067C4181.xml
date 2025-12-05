@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="74D1E898-5ADA-48B4-4933-B3FC067C4181" name="ALLERGEN">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>A9D292CD-E883-4FCF-677E-474620DD2A0F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="allergen_id" id="E73EF636-5562-FF20-1662-3E4F11FE9F0A">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>7B8218B1-8071-1FA7-2B74-F33227DCE7B5</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="3973F622-76C6-F2EB-2394-D961469417CD">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>1C871D1E-6B71-DFAC-2D6C-737A0387D120</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9FC79412-29C5-636F-FD14-9EB91097AB2C" name="ALLERGEN_PK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>403208E5-4772-9222-63F3-4652243A2C76</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E73EF636-5562-FF20-1662-3E4F11FE9F0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B45B6F0B-B5AD-6D17-1962-140DB7B617FE" name="LICENSE">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-02 17:28:07 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="5C50CD24-1D69-176E-C1EE-2E25A43D1D2D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="license_id" id="83CA8BCD-F469-3B25-4B35-2A6B488323E2">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-02 17:28:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="5C50CD24-1D69-176E-C1EE-2E25A43D1D2D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="license_type_id" id="0AA47416-EBDD-F093-C226-A8F696E05997">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-02 20:04:13 UTC</createdTime>
+<generatorID>11B35485-461C-0C5D-F5B0-AC2A9FB12072</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="5C50CD24-1D69-176E-C1EE-2E25A43D1D2D" value="true"/>
+</engineerTo>
+<referedAttribute>290D0B9A-CABE-1868-7F36-6A7BB2B297C5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valid_from" id="7264DF97-417D-7C7B-4F43-7171B5E7D34D">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-02 17:31:09 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="5C50CD24-1D69-176E-C1EE-2E25A43D1D2D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valid_till" id="D111A9DC-2F93-F202-0C92-0DE9BBDF8A94">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-02 17:35:49 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="5C50CD24-1D69-176E-C1EE-2E25A43D1D2D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6FF1E74B-49D8-587D-EE67-EB6EEA9A57ED" name="LICENSE_PK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-02 17:28:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="5C50CD24-1D69-176E-C1EE-2E25A43D1D2D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>83CA8BCD-F469-3B25-4B35-2A6B488323E2</newElementsIDs>
+<usedAttributes>
+<attributeRef>83CA8BCD-F469-3B25-4B35-2A6B488323E2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

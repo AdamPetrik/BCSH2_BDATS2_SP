@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB9DE3C7-DB67-DA07-E7B4-7D6C5D50D1F3" name="LOG">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 17:09:36 UTC</createdTime>
+<generatorID>6BCD9D41-467B-EBFF-118D-31CF5E69EF0D</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="log_id" id="D8384141-C522-1F79-42E4-3756999DFF6E">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 17:09:36 UTC</createdTime>
+<generatorID>3EA61ABA-75E6-9744-9627-1BD4CFBF3D0E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="time" id="A7A2D433-6AFE-F2E1-4416-A2D4CC77D1A7">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 17:09:36 UTC</createdTime>
+<generatorID>D6A09C8C-3FA3-D541-6FB6-B5EF4221B317</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="117179A5-2515-8C01-1534-7F00635519C8">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 17:09:36 UTC</createdTime>
+<generatorID>D28F1E7D-2EDC-47DE-87C1-4565B1836F92</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="action" id="2743B9F1-0E45-BC60-8808-3AB6844F21DE">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 17:09:36 UTC</createdTime>
+<generatorID>25672263-5DC2-5CCC-CEB4-37578E44D649</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="table_name" id="4B9ADE1E-9810-2135-8A17-E6329E008A49">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 17:09:36 UTC</createdTime>
+<generatorID>DA4B9669-CAED-B427-60AC-778DF4867BC8</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="784D1A44-F5AA-E53D-7BAD-8D5842F9825A" name="LOG_PK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 17:09:36 UTC</createdTime>
+<generatorID>0CC23114-1F5F-49BD-6228-F091C43F544B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8384141-C522-1F79-42E4-3756999DFF6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

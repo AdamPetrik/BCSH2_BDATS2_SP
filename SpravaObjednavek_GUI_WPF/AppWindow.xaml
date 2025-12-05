@@ -1,0 +1,31 @@
+﻿<Window x:Class="SpravaObjednavek_GUI_WPF.AppWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpravaObjednavek_GUI_WPF"
+        mc:Ignorable="d"
+        Title="AppWindow" Height="900" Width="1600"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Height" Value="150"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#f6faff"/>
+            <Setter Property="BorderBrush" Value="#0078d7"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <StackPanel DockPanel.Dock="Left" Width="200" Background="#fafafa">
+                <Button Content="Kasa" />
+                <Button Content="Objednávky" />
+                <Button Content="Administrace" />
+            </StackPanel>
+            <DockPanel LastChildFill="False"/>
+                
+            </DockPanel>
+    </Grid>
+</Window>

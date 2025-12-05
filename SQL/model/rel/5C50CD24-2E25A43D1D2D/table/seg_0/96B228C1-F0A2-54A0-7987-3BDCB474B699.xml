@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="96B228C1-F0A2-54A0-7987-3BDCB474B699" name="ADDRESS">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>E5925410-C60D-D3C9-0D8A-094B31CA4A6E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="address_id" id="C7C27FAC-8C4F-8CC4-CC6B-0F1D16F82A43">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>C4A1D789-4511-764D-7BAA-D49F1AD28981</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street" id="6EB488E7-FB06-41AD-BA50-950C6C03E13C">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>1910DD4D-D0E9-44A3-B0C4-2982E8238EB5</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="building_number" id="3A245EDA-D48A-D2DF-B3A6-FF132D24DA90">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>F41A483F-4C4E-60A3-E0A6-C915C0250FC8</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="province" id="0B6B8E4F-7ADF-DD9E-39DA-39964D2DAE31">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>C9B33C08-9685-DE06-7327-31B35F84D2A5</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city" id="28CD40C2-8FD8-D1B6-8C00-38595FC0622A">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>AF181B2D-217D-275D-047C-BF498C01B808</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="postal_code" id="454D1DA9-8D5A-F948-000D-8540708B0C65">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>63545883-9B6D-BC54-F015-67680044123E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2FE1EC8B-2A8B-80AC-3AF4-3405316B046E" name="ADDRESS_PK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>C16D85EA-D730-B016-B244-9079CA9F807E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7C27FAC-8C4F-8CC4-CC6B-0F1D16F82A43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

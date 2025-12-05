@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="51E25A9F-AE85-0D23-914B-B8D09CDE3D28" name="USER">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>93AA7BF8-DD3E-EF4E-9118-39829F7CCAA8</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="DB3A4961-E099-B06F-52F3-89DEFF976673">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>5301506B-72A6-164A-EDB2-5043D4D64DD7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06AF527C-F63C-1479-EF4E-5511856B42C9" referredColumn="B19AA783-2C7A-A416-3F03-498AF95E5436"/>
+</associations>
+</Column>
+<Column name="user_type" id="57955895-DE38-676B-27B2-EA20307AAE73">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 17:12:42 UTC</createdTime>
+<generatorID>95A945EA-85C1-622B-9725-6FB380EA5413</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<constraintName>USER_TYPE_CHECK_CONSTRAINT</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<listOfValues>
+<valueDef value="ADMINISTRATOR" description=""/>
+<valueDef value="GUEST" description=""/>
+<valueDef value="USER" description=""/>
+</listOfValues>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="license_id" id="8334F548-952B-64D4-5A06-C3486E0689D9">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>CC86CB47-EAF8-DA9E-470B-6E4C1638F350</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9A804DF-22A0-0779-B1B0-5199123C83F8" referredColumn="11D08BC8-6428-B635-86DC-6F5C4F8BBA09"/>
+</associations>
+</Column>
+<Column name="address_id" id="F9B2E44A-000B-E269-147B-955B0C612A08">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>E835615E-A639-4FE9-B6D3-8F496ECC9145</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="346E2DE6-F5DF-2615-F7E5-19B1A1DC16D7" referredColumn="C7C27FAC-8C4F-8CC4-CC6B-0F1D16F82A43"/>
+</associations>
+</Column>
+<Column name="note" id="1FE6F4CB-160C-CCA2-95AF-35BA0F2897FE">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>C4E9ACEA-F746-0BF3-EAEE-064B7552F14B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BB6B4745-1052-BD55-3254-E7488547489F" name="USER_PK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>106CC65A-82AD-EFC7-54B5-AA1B632B442B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB3A4961-E099-B06F-52F3-89DEFF976673"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9AC26704-E118-2927-CEA7-A9C9C195B636" name="USER__IDX">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>D8B8B9C2-E4A8-82BC-09FA-112810C0508A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="8334F548-952B-64D4-5A06-C3486E0689D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87CF53C2-3A53-BDDD-F119-249B3EDB864C" name="USER_ADDRESS_FK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>F4C09586-E03E-6788-AA87-5B133A2A55AA</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9B2E44A-000B-E269-147B-955B0C612A08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B6043EC7-2880-E175-8261-A013D1A72B82" name="USER_LOGIN_CREDS_FK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>F39C0149-2955-0B38-2814-D8680BC49098</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB3A4961-E099-B06F-52F3-89DEFF976673"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2356DBC0-ECBA-93ED-C50D-9594F79B0865" name="USER_LICENSE_FK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>D8B8B9C2-E4A8-82BC-09FA-112810C0508A</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8334F548-952B-64D4-5A06-C3486E0689D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

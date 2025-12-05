@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="37780B1F-C5E3-DC66-27D6-EC66EE19094E" name="ITEM_ALLERGEN">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>192885A6-407C-CEE6-0AC1-00ECF9F7DAC1</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="item_id" id="38A3B3D1-EB58-D327-7235-8FEF5CE1E08C">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>987A2150-2A05-BC0B-1DD2-D781C3E23B76</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="547E3B0A-8C40-4A97-30B0-0F6235FD3E03" referredColumn="BF85D5CB-A21C-0B20-6BDD-1E09A61D5F7F"/>
+</associations>
+</Column>
+<Column name="allergen_id" id="91DF8DDF-9B61-ED23-E5FC-C61B537642B1">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>0536FBCD-1A07-E896-B615-9FD4E92A6103</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="87B63516-22FC-7859-A5B7-2D9273E08826" referredColumn="E73EF636-5562-FF20-1662-3E4F11FE9F0A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4558B31F-0792-D74E-BA03-CAE7C4BF147B" name="ITEM_ALLERGEN_PK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>DF4B3351-28C2-084B-E54C-5E946D5E0E17</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38A3B3D1-EB58-D327-7235-8FEF5CE1E08C"/>
+<colUsage columnID="91DF8DDF-9B61-ED23-E5FC-C61B537642B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9010BDCD-6CCE-42A9-31B8-55E14D2575A1" name="ITEM_ALLERGEN_ALLERGEN_FK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>8D2A2696-66A7-7551-A9F4-485DCE244147</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91DF8DDF-9B61-ED23-E5FC-C61B537642B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4FD45FE-EDEA-93E2-A4DE-F4624A2FD11C" name="ITEM_ALLERGEN_ITEM_FK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>FCE74278-AD5A-79D5-8F21-5D486B44F94C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38A3B3D1-EB58-D327-7235-8FEF5CE1E08C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

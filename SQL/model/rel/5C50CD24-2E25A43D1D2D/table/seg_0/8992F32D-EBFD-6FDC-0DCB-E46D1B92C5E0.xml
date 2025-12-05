@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8992F32D-EBFD-6FDC-0DCB-E46D1B92C5E0" name="LICENSE">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>B45B6F0B-B5AD-6D17-1962-140DB7B617FE</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="license_id" id="11D08BC8-6428-B635-86DC-6F5C4F8BBA09">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>83CA8BCD-F469-3B25-4B35-2A6B488323E2</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="license_type_id" id="C0DD9A6E-67AB-03FB-FC7E-31A7A5F4179D">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>0AA47416-EBDD-F093-C226-A8F696E05997</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D9437DC0-809E-3AAF-2308-02507E16F52C" referredColumn="416CE2FB-F5C7-5FCC-7435-8271EF840FE5"/>
+</associations>
+</Column>
+<Column name="valid_from" id="4581456B-6517-97CE-7083-472F8DA98750">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>7264DF97-417D-7C7B-4F43-7171B5E7D34D</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valid_till" id="10BEA48F-6083-CB32-3101-BE5612D845CA">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>D111A9DC-2F93-F202-0C92-0DE9BBDF8A94</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F50C7AC3-7CD5-0352-A58A-D1AF755AD27C" name="LICENSE_PK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>6FF1E74B-49D8-587D-EE67-EB6EEA9A57ED</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11D08BC8-6428-B635-86DC-6F5C4F8BBA09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B87A9CE1-9FDC-D389-1129-F9AEC7CDFC68" name="LICENSE_LICENSE_TYPE_FK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>11B35485-461C-0C5D-F5B0-AC2A9FB12072</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0DD9A6E-67AB-03FB-FC7E-31A7A5F4179D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

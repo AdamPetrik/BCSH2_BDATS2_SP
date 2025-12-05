@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="93AA7BF8-DD3E-EF4E-9118-39829F7CCAA8" name="USER">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-02 16:21:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="5C50CD24-1D69-176E-C1EE-2E25A43D1D2D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="user_id" id="5301506B-72A6-164A-EDB2-5043D4D64DD7">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:42:31 UTC</createdTime>
+<generatorID>F39C0149-2955-0B38-2814-D8680BC49098</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="5C50CD24-1D69-176E-C1EE-2E25A43D1D2D" value="true"/>
+</engineerTo>
+<referedAttribute>8CD9FC9B-6C80-D85F-E296-BC5A0A037273</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_type" id="95A945EA-85C1-622B-9725-6FB380EA5413">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 17:11:43 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="5C50CD24-1D69-176E-C1EE-2E25A43D1D2D" value="true"/>
+</engineerTo>
+<constraintName>USER_TYPE_CHECK_CONSTRAINT</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<listOfValues>
+<valueDef value="ADMINISTRATOR" description=""/>
+<valueDef value="GUEST" description=""/>
+<valueDef value="USER" description=""/>
+</listOfValues>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address_id" id="E835615E-A639-4FE9-B6D3-8F496ECC9145">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-02 19:21:33 UTC</createdTime>
+<generatorID>F4C09586-E03E-6788-AA87-5B133A2A55AA</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="5C50CD24-1D69-176E-C1EE-2E25A43D1D2D" value="true"/>
+</engineerTo>
+<referedAttribute>C4A1D789-4511-764D-7BAA-D49F1AD28981</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="license_id" id="CC86CB47-EAF8-DA9E-470B-6E4C1638F350">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:43:38 UTC</createdTime>
+<generatorID>D8B8B9C2-E4A8-82BC-09FA-112810C0508A</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="5C50CD24-1D69-176E-C1EE-2E25A43D1D2D" value="true"/>
+</engineerTo>
+<referedAttribute>83CA8BCD-F469-3B25-4B35-2A6B488323E2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="note" id="C4E9ACEA-F746-0BF3-EAEE-064B7552F14B">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-02 17:29:59 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="5C50CD24-1D69-176E-C1EE-2E25A43D1D2D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="106CC65A-82AD-EFC7-54B5-AA1B632B442B" name="USER PK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:47:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="5C50CD24-1D69-176E-C1EE-2E25A43D1D2D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5301506B-72A6-164A-EDB2-5043D4D64DD7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

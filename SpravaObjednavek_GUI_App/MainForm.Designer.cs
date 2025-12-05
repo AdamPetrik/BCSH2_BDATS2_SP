@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
+            menuPanel = new Panel();
             label1 = new Label();
             button4 = new Button();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
-            panel2 = new Panel();
-            panel1.SuspendLayout();
+            mainPanel = new Panel();
+            menuPanel.SuspendLayout();
             SuspendLayout();
             // 
-            // panel1
+            // menuPanel
             // 
-            panel1.BackColor = Color.FromArgb(35, 60, 103);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(button4);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(200, 825);
-            panel1.TabIndex = 0;
+            menuPanel.BackColor = Color.FromArgb(35, 60, 103);
+            menuPanel.Controls.Add(label1);
+            menuPanel.Controls.Add(button4);
+            menuPanel.Controls.Add(button3);
+            menuPanel.Controls.Add(button2);
+            menuPanel.Controls.Add(button1);
+            menuPanel.Dock = DockStyle.Left;
+            menuPanel.Location = new Point(0, 0);
+            menuPanel.Name = "menuPanel";
+            menuPanel.Size = new Size(200, 825);
+            menuPanel.TabIndex = 0;
             // 
             // label1
             // 
@@ -130,34 +130,35 @@
             button1.Text = "Kasa";
             button1.TextImageRelation = TextImageRelation.TextAboveImage;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
-            // panel2
+            // mainPanel
             // 
-            panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(200, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1320, 825);
-            panel2.TabIndex = 1;
+            mainPanel.Dock = DockStyle.Fill;
+            mainPanel.Location = new Point(200, 0);
+            mainPanel.Name = "mainPanel";
+            mainPanel.Size = new Size(1320, 825);
+            mainPanel.TabIndex = 1;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1520, 825);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
+            Controls.Add(mainPanel);
+            Controls.Add(menuPanel);
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Správa objednávek";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            menuPanel.ResumeLayout(false);
+            menuPanel.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
-        private Panel panel2;
+        private Panel menuPanel;
+        private Panel mainPanel;
         private Button button1;
         private Button button4;
         private Button button3;

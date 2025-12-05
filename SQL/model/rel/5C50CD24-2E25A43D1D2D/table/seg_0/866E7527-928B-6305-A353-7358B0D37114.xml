@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="866E7527-928B-6305-A353-7358B0D37114" name="IMAGE">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 15:52:41 UTC</createdTime>
+<generatorID>DDF2D701-5955-3301-E0C5-A9F593836562</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="image_id" id="2F45BC9A-CFC8-4E83-B6F0-36EB4283FB6D">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 15:52:41 UTC</createdTime>
+<generatorID>D4C11390-831A-9138-00F3-0A5DAF5C3125</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="filename" id="0D016133-F5C2-CD6A-F113-1DAC6ADE7FA3">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 15:52:41 UTC</createdTime>
+<generatorID>FDAD64B1-FA38-A077-F32D-DB9F2B3956C3</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="extension" id="1589E3BA-EC40-5B33-DB07-2E785CD9A0AD">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 15:52:41 UTC</createdTime>
+<generatorID>0237FD27-F2A9-0951-1B53-A4645B08BBBD</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mimetype" id="57C2E64F-A944-015D-3B6B-B2770AF3C707">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 15:52:41 UTC</createdTime>
+<generatorID>7A553B44-B4B6-921E-A866-4E05894A3D1B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="content" id="5A009E05-8806-27DA-D3FF-6E448480024B">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 15:52:41 UTC</createdTime>
+<generatorID>275D5715-1965-EB1E-1DCC-9C9710297CD1</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="uploaded_at" id="74F5DF33-091C-0315-2CDA-EDBC3666EEAA">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 15:52:41 UTC</createdTime>
+<generatorID>0E90EE81-798E-09E0-3C6E-3CA61435921E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modified_at" id="11EB5C1E-3EAC-0187-07DD-66E19FC5E213">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 15:52:41 UTC</createdTime>
+<generatorID>27CF8334-181B-79B0-B55C-5621760B1423</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="uploaded_by" id="A18D6E52-05C9-0515-0301-0CF11C3B0689">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 15:52:41 UTC</createdTime>
+<generatorID>A6B0058A-AC41-9419-10DA-8A6EE5CAA866</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modified_by" id="784548B0-FF87-5DBA-3EF5-7E5A66DC8BBA">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 15:52:41 UTC</createdTime>
+<generatorID>C11DB42F-4B89-05EC-74B2-0320079F78F4</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4799C9B3-9D75-62DD-1D1E-0CFA9658BD82" name="IMAGE_PK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-12-05 15:52:41 UTC</createdTime>
+<generatorID>793A5EF9-0642-3DA7-3817-776FED8ABC51</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F45BC9A-CFC8-4E83-B6F0-36EB4283FB6D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

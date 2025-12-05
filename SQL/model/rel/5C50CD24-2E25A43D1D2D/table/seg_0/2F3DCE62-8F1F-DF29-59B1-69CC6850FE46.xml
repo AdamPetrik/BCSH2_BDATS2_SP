@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F3DCE62-8F1F-DF29-59B1-69CC6850FE46" name="ORDER_ITEM">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>D64A0FDF-24A4-DAA3-1980-81DE967F714C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="order_id" id="DE7907CD-B9F7-24FC-7D63-E1223F37B3F9">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>52FB83EF-F79F-BCB9-640D-898422B1E35B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="616E2815-A810-35C4-0BB9-B5CE82259720" referredColumn="3ECF8B99-BEC0-BA7F-C6C7-3DB7EB5B502F"/>
+</associations>
+</Column>
+<Column name="item_id" id="00D284CE-D072-EE7A-D2B3-85CB25171648">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>86E8CDFD-DAF1-C742-7797-A9B955F33D11</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C76DF0D5-ED69-52AF-E223-EF1D4FD14885" referredColumn="BF85D5CB-A21C-0B20-6BDD-1E09A61D5F7F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F69A3BE7-BBD0-BBF2-709C-2A698598237E" name="ORDER_ITEM_PK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>2CD98B8D-44B7-9849-2CD3-CDAC01133B95</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE7907CD-B9F7-24FC-7D63-E1223F37B3F9"/>
+<colUsage columnID="00D284CE-D072-EE7A-D2B3-85CB25171648"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BEF52A9D-7D09-40EB-FA2A-94370E095F85" name="ORDER_ITEM_ITEM_FK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>48FFB8B5-7C17-9BA5-F15E-218A7F2B7979</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00D284CE-D072-EE7A-D2B3-85CB25171648"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E00DDBA2-0CF9-1901-D832-4FE4C66A171F" name="ORDER_ITEM_ORDER_FK">
+<createdBy>Adam Petřík</createdBy>
+<createdTime>2025-11-24 19:48:13 UTC</createdTime>
+<generatorID>D9DE2724-984B-73FA-2B0C-AD9976A42E05</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE7907CD-B9F7-24FC-7D63-E1223F37B3F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
