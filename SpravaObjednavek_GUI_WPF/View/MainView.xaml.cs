@@ -15,9 +15,9 @@ namespace SpravaObjednavek_GUI_WPF
     /// <summary>
     /// Interaction logic for AppWindow.xaml
     /// </summary>
-    public partial class AppWindow : Window
+    public partial class MainView : Window
     {
-        public AppWindow()
+        public MainView()
         {
             InitializeComponent();
         }

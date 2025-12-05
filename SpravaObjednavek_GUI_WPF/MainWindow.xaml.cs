@@ -45,7 +45,7 @@ namespace SpravaObjednavek_GUI_WPF
 
         private void guestBtn_Click(object sender, RoutedEventArgs e)
         {
-            AppWindow app = new AppWindow();
+            MainView app = new MainView();
             app.Show();
             Close();
         }
