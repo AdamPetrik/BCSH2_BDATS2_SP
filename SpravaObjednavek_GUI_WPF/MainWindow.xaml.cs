@@ -38,8 +38,8 @@ namespace SpravaObjednavek_GUI_WPF
             else
             {
                 //Přihlášení uživatele
-                AppWindow appWindow = new AppWindow();
-                appWindow.Show();
+                //AppWindow appWindow = new AppWindow();
+                //appWindow.Show();
             }
         }
 

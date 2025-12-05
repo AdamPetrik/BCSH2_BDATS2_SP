@@ -1,5 +1,4 @@
-﻿using SpravaObjednavek_GUI_WPF.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -9,15 +8,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-namespace SpravaObjednavek_GUI_WPF
+
+namespace SpravaObjednavek_GUI_WPF.View
 {
     /// <summary>
-    /// Interaction logic for AppWindow.xaml
+    /// Interaction logic for AdministraceView.xaml
     /// </summary>
-    public partial class AppWindow : Window
+    public partial class AdministraceView : UserControl
     {
-        public AppWindow()
+        public AdministraceView()
         {
             InitializeComponent();
         }

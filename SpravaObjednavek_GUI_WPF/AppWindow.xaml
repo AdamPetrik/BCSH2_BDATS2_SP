@@ -4,28 +4,96 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SpravaObjednavek_GUI_WPF"
+        xmlns:vm="clr-namespace:SpravaObjednavek_GUI_WPF.ViewModel"
+        xmlns:view="clr-namespace:SpravaObjednavek_GUI_WPF.View"
         mc:Ignorable="d"
         Title="AppWindow" Height="900" Width="1600"
         WindowStartupLocation="CenterScreen">
+
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
+
     <Window.Resources>
-        <Style TargetType="Button">
-            <Setter Property="Margin" Value="5"/>
-            <Setter Property="Height" Value="150"/>
+        
+
+        <Style x:Key="MenuButtonStyle" TargetType="RadioButton">
             <Setter Property="FontSize" Value="16"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Background" Value="#f6faff"/>
-            <Setter Property="BorderBrush" Value="#0078d7"/>
+            <Setter Property="Margin" Value="0,5,0,5"/>
+            <Setter Property="Background" Value="#96b4e4"/>
+            <Setter Property="BorderThickness" Value="0"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Border Background="{TemplateBinding Background}" 
+                            Padding="10,5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+                <Trigger Property="IsChecked" Value="True">
+                    <Setter Property="Background" Value="#2C73F7"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </Trigger>
+
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsMouseOver" Value="True"/>
+                        <Condition Property="IsChecked" Value="False"/>
+                    </MultiTrigger.Conditions>
+                    <Setter Property="Background" Value="#2C73F7"/>
+                </MultiTrigger>
+            </Style.Triggers>
         </Style>
+
+        <DataTemplate DataType="{x:Type vm:KasaViewModel}">
+            <view:KasaView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:ObjednavkyViewModel}">
+            <view:ObjednavkyView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:AdministraceViewModel}">
+            <view:AdministraceView />
+        </DataTemplate>
     </Window.Resources>
+
     <Grid>
-        <DockPanel LastChildFill="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <DockPanel LastChildFill="True" Grid.ColumnSpan="2">
             <StackPanel DockPanel.Dock="Left" Width="200" Background="#fafafa">
-                <Button Content="Kasa" />
-                <Button Content="Objednávky" />
-                <Button Content="Administrace" />
-            </StackPanel>
-            <DockPanel LastChildFill="False"/>
+                <RadioButton Content="Kasa"
+                 GroupName="Navigace"
+                 Style="{StaticResource MenuButtonStyle}"
+                 Command="{Binding UpdateViewCommand}"
+                 CommandParameter="Kasa"
+                 IsChecked="True"/>
                 
-            </DockPanel>
+                <RadioButton Content="Objednávky"
+                 GroupName="Navigace"
+                 Style="{StaticResource MenuButtonStyle}"
+                 Command="{Binding UpdateViewCommand}"
+                 CommandParameter="Objednavky"/>
+
+                <RadioButton Content="Administrace"
+                 GroupName="Navigace"
+                 Style="{StaticResource MenuButtonStyle}"
+                 Command="{Binding UpdateViewCommand}"
+                 CommandParameter="Administrace"/>
+
+            </StackPanel>
+
+            <ContentControl Content="{Binding CurrentView}" />
+
+        </DockPanel>
     </Grid>
 </Window>

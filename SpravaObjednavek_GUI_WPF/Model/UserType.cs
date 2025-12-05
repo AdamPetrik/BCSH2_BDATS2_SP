@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using SpravaObjednavek_GUI_WPF.Model;
 
 namespace SpravaObjednavek_GUI_WPF.Model
 {
-    enum userType
+    public enum UserType
     {
-        ADMINISTRATOR,
-        USER,
-        GUEST
+        Admin,
+        User,
+        Guest
     }
 }
